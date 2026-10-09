@@ -1,0 +1,162 @@
+/* Глобальные стили */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  min-height: 100vh;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* Стили главного класса */
+.post__card {
+  max-width: 261px;
+  min-height: 282px;
+
+  background-color: #ffffff;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+  padding: 26px 24px;
+  gap: 14px;
+}
+
+/* Стили информация о человеке (аватар + имя и меню */
+.post__card-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 39px;
+  width: 213px;
+
+  margin-bottom: 14px;
+}
+
+/* Аватар + имя */
+.post__card-info-people {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Фото - аватар */
+.avatar {
+  width: 39px;
+  height: 39px;
+  object-fit: cover;
+
+  border: none;
+  margin-right: 16px;
+}
+
+/* 4. Блок с текстом (Имя + Город) */
+.text-decor {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  align-items: start;
+  font-family: "Inter", sans-serif;
+}
+
+/* Стили для текста имени */
+.text-decor p:first-child {
+  font-size: 10px;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Стили для текста города */
+.text-decor p:last-child {
+  font-size: 8px;
+  color: #8c8c8c;
+  margin: 0;
+}
+
+/* 5. Кнопка трех точек */
+.post__card-info-menu {
+  background: none;
+  border: none;
+  padding: 17px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+/* Пост-картинка */
+.post {
+  width: 100%;
+  margin-bottom: 14px;
+}
+
+/* Кнопки под постом */
+.post__actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  box-sizing: border-box;
+  width: 100%;
+  height: 17px;
+
+  margin-bottom: 14px;
+}
+
+/* Стилизация одной кнопки */
+.action-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+/* Стилизация левых кнопок */
+.post__actions-left {
+  display: flex;
+  gap: 18px;
+  
+}
+
+/* Стилизация кравой кнопки */
+.post__actions-right {
+  display: flex;
+}
+
+/* Лайки под постом */
+.likes__post{
+  width: 181px;
+  height: 30px;
+}
+
+/* Стили для текста лайков*/
+.likes__post p:first-child {
+  font-size: 10px;
+
+  margin: 0;
+  margin-bottom: 7px;
+}
+
+/* Стили для текста даты */
+.likes__post p:last-child {
+  font-size: 8px;
+  color: #8c8c8c;
+  margin: 0;
+}
+
+.bold-text {
+  font-weight: bold;
+}
